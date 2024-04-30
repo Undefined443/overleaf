@@ -17,7 +17,6 @@ endif
 
 build-community:
 	cp .dockerignore $(MONOREPO_ROOT)
-	docker build --build-arg OVERLEAF_BASE_TAG --build-arg MONOREPO_REVISION -f Dockerfile -t $(OVERLEAF_TAG) $(MONOREPO_ROOT)
 	docker buildx build --platform linux/amd64,linux/arm64 --build-arg OVERLEAF_BASE_TAG --build-arg MONOREPO_REVISION -f Dockerfile -t $(OVERLEAF_TAG) $(MONOREPO_ROOT)
 
 
