@@ -85,7 +85,7 @@ RUN adduser --system --group --home /overleaf --no-create-home overleaf && \
 	mkdir -p /var/lib/overleaf/data/template_files && \
 	chown www-data:www-data /var/lib/overleaf/data/template_files
 
-ADD fonts /usr/local/share/fonts
+ADD fonts /usr/local/share/
 
 RUN ln -s /usr/local/texlive/2024/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf \
 && fc-cache -fv \
