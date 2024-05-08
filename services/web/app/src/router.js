@@ -513,7 +513,6 @@ function initialize(webRouter, privateApiRouter, publicApiRouter) {
       RateLimiterMiddleware.rateLimit(openProjectRateLimiter, {
         params: ['Project_id'],
       }),
-      AuthenticationController.validateUserSession(),
       AuthorizationMiddleware.ensureUserCanReadProject,
       ProjectController.loadEditor
     )
@@ -1323,28 +1322,6 @@ function initialize(webRouter, privateApiRouter, publicApiRouter) {
       )
     }
   )
-
-  webRouter.get('/no-cache', function (req, res, next) {
-    res.header('Cache-Control', 'max-age=0')
-    res.sendStatus(404)
-  })
-
-  webRouter.get('/oops-express', (req, res, next) =>
-    next(new Error('Test error'))
-  )
-  webRouter.get('/oops-internal', function (req, res, next) {
-    throw new Error('Test error')
-  })
-  webRouter.get('/oops-mongo', (req, res, next) =>
-    require('./models/Project').Project.findOne({}, function () {
-      throw new Error('Test error')
-    })
-  )
-
-  privateApiRouter.get('/opps-small', function (req, res, next) {
-    logger.err('test error occured')
-    res.sendStatus(200)
-  })
 
   webRouter.post('/error/client', function (req, res, next) {
     logger.warn(

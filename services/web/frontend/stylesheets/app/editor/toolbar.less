@@ -28,6 +28,17 @@
     }
   }
 
+  .toolbar-right .back-to-editor-btn {
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    .btn-secondary;
+
+    .toolbar-label {
+      margin-bottom: 0;
+    }
+  }
+
   > a:focus,
   button:focus {
     outline: none;
@@ -38,7 +49,7 @@
   .toolbar-left > a:not(.btn),
   .toolbar-left > button,
   .toolbar-right > a:not(.btn),
-  .toolbar-right > button {
+  .toolbar-right > button:not(.back-to-editor-btn) {
     display: inline-block;
     color: @toolbar-icon-btn-color;
     background-color: transparent;
