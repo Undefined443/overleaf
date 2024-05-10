@@ -2,7 +2,9 @@
 # Overleaf Base Image (sharelatex/sharelatex-base)
 # --------------------------------------------------
 
-FROM phusion/baseimage:jammy-1.0.2
+FROM phusion/baseimage:jammy-1.0.4
+
+LABEL org.opencontainers.image.source https://github.com/undefined443/overleaf
 
 # Makes sure LuaTex cache is writable
 # -----------------------------------

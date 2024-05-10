@@ -5,6 +5,8 @@
 ARG OVERLEAF_BASE_TAG=undefined443/sharelatex-base:latest
 FROM $OVERLEAF_BASE_TAG
 
+LABEL org.opencontainers.image.source https://github.com/undefined443/overleaf
+
 WORKDIR /overleaf
 
 # Add required source files
