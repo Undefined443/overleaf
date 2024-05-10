@@ -89,6 +89,15 @@ RUN chmod +x /overleaf/bin/flush-history-queues
 ADD server-ce/bin/force-history-resyncs /overleaf/bin/force-history-resyncs
 RUN chmod +x /overleaf/bin/force-history-resyncs
 
+# Copy font files
+# ---------------
+ADD server-ce/fonts/ /usr/local/share/fonts/
+RUN ln -s /usr/local/texlive/2024/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf && \
+    fc-cache -fv && \
+    apt-get update && \
+    apt-get install -y inkscape python3-pygments && \
+    echo "shell_escape = t" >> /usr/local/texlive/2024/texmf.cnf
+
 # File that controls open|closed status of the site
 # -------------------------------------------------
 ENV SITE_MAINTENANCE_FILE "/etc/overleaf/site_status"
