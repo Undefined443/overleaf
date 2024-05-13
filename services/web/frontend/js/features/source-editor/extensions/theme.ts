@@ -63,7 +63,7 @@ const fontFamilies: Record<FontFamily, string[]> = {
 }
 
 const createThemeFromOptions = ({
-  fontSize = 12,
+  fontSize = 14,
   fontFamily = 'monolisa',
   lineHeight = 'normal',
   overallTheme = '',
