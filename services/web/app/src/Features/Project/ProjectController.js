@@ -784,7 +784,7 @@ const ProjectController = {
                 autoPairDelimiters: user.ace.autoPairDelimiters,
                 pdfViewer: user.ace.pdfViewer,
                 syntaxValidation: user.ace.syntaxValidation,
-                fontFamily: user.ace.fontFamily || 'lucida',
+                fontFamily: user.ace.fontFamily || 'monolisa',
                 lineHeight: user.ace.lineHeight || 'normal',
                 overallTheme: user.ace.overallTheme,
               },

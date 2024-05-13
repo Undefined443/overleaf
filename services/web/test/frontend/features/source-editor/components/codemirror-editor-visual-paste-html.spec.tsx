@@ -365,7 +365,7 @@ describe('<CodeMirrorEditor/> paste HTML in Visual mode', function () {
   it('handles pasted code in pre blocks', function () {
     mountEditor()
 
-    const data = `test <pre><code>\\textbf{foo}</code></pre> <pre style="font-family: 'Lucida Console', monospace">\\textbf{foo}</pre> test`
+    const data = `test <pre><code>\\textbf{foo}</code></pre> <pre style="font-family: 'MonoLisa', monospace">\\textbf{foo}</pre> test`
 
     const clipboardData = new DataTransfer()
     clipboardData.setData('text/html', data)

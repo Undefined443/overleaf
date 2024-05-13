@@ -14,7 +14,7 @@ export default function SettingsFontFamily() {
       options={[
         {
           value: 'monolisa',
-          label: 'MonoLisa / Monaco / Menlo / Consolas',
+          label: 'MonoLisa / Menlo / Consolas',
         },
         {
           value: 'lucida',

@@ -14,7 +14,7 @@ describe('<SettingsFontFamily />', function () {
 
     const select = screen.getByLabelText('Font Family')
 
-    const optionMonoLisa = within(select).getByText('MonoLisa / Monaco / Menlo / Consolas')
+    const optionMonoLisa = within(select).getByText('MonoLisa / Menlo / Consolas')
     expect(optionMonoLisa.getAttribute('value')).to.equal('monolisa')
 
     const optionLucida = within(select).getByText('Lucida / Source Code Pro')

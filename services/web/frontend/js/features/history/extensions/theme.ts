@@ -24,7 +24,7 @@ export const lineHeights: Record<LineHeight, number> = {
 }
 
 const fontFamilies: Record<FontFamily, string[]> = {
-  monolisa: ['MonoLisa', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'monospace'],
+  monolisa: ['MonoLisa', 'Menlo', 'Ubuntu Mono', 'Consolas', 'monospace'],
   lucida: ['Lucida Console', 'Source Code Pro', 'monospace'],
 }
 

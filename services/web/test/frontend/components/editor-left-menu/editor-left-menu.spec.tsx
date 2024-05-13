@@ -729,7 +729,7 @@ describe('<EditorLeftMenu />', function () {
 
             const texts = [...options].map(o => o.text)
             expect(texts).to.deep.eq([
-              'MonoLisa / Monaco / Menlo / Consolas',
+              'MonoLisa / Menlo / Consolas',
               'Lucida / Source Code Pro',
             ])
           }
