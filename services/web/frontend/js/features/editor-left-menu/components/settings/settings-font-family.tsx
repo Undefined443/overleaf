@@ -13,8 +13,8 @@ export default function SettingsFontFamily() {
       value={fontFamily}
       options={[
         {
-          value: 'monaco',
-          label: 'Monaco / Menlo / Consolas',
+          value: 'monolisa',
+          label: 'MonoLisa / Monaco / Menlo / Consolas',
         },
         {
           value: 'lucida',

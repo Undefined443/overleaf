@@ -42,10 +42,10 @@ export default {
 }
 
 const settings = {
-  fontSize: 12,
-  fontFamily: 'monaco',
+  fontSize: 14,
+  fontFamily: 'monolisa',
   lineHeight: 'normal',
-  editorTheme: 'textmate',
+  editorTheme: 'dracula',
   overallTheme: '',
   mode: 'default',
   autoComplete: true,

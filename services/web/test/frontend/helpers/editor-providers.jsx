@@ -26,10 +26,10 @@ export const USER_EMAIL = 'testuser@example.com'
 
 const defaultUserSettings = {
   pdfViewer: 'pdfjs',
-  fontSize: 12,
-  fontFamily: 'monaco',
+  fontSize: 14,
+  fontFamily: 'monolisa',
   lineHeight: 'normal',
-  editorTheme: 'textmate',
+  editorTheme: 'dracula',
   overallTheme: '',
   mode: 'default',
   autoComplete: true,

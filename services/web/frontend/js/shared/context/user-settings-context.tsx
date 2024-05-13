@@ -17,11 +17,11 @@ const defaultSettings: UserSettings = {
   autoComplete: true,
   autoPairDelimiters: true,
   syntaxValidation: false,
-  editorTheme: 'textmate',
+  editorTheme: 'dracula',
   overallTheme: '',
   mode: 'default',
-  fontSize: 12,
-  fontFamily: 'monaco',
+  fontSize: 14,
+  fontFamily: 'monolisa',
   lineHeight: 'normal',
 }
 

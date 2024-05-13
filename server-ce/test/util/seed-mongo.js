@@ -25,9 +25,9 @@ const DEFAULT_USER_PROPERTIES = {
   },
   ace: {
     mode: 'none',
-    theme: 'textmate',
+    theme: 'dracula',
     overallTheme: '',
-    fontSize: 12,
+    fontSize: 14,
     autoComplete: true,
     autoPairDelimiters: true,
     spellCheckLanguage: 'en',

@@ -76,7 +76,7 @@ const UserSchema = new Schema(
     holdingAccount: { type: Boolean, default: false },
     ace: {
       mode: { type: String, default: 'none' },
-      theme: { type: String, default: 'textmate' },
+      theme: { type: String, default: 'dracula' },
       overallTheme: { type: String, default: '' },
       fontSize: { type: Number, default: '12' },
       autoComplete: { type: Boolean, default: true },

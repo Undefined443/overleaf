@@ -66,8 +66,8 @@ const Container: FC = ({ children }) => (
 const mockScope = () => {
   return {
     settings: {
-      fontSize: 12,
-      fontFamily: 'monaco',
+      fontSize: 14,
+      fontFamily: 'monolisa',
       lineHeight: 'normal',
       overallTheme: '',
     },

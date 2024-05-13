@@ -1,7 +1,7 @@
 import { EditorView } from '@codemirror/view'
 import { Compartment, TransactionSpec } from '@codemirror/state'
 
-export type FontFamily = 'monaco' | 'lucida'
+export type FontFamily = 'monolisa' | 'lucida'
 export type LineHeight = 'compact' | 'normal' | 'wide'
 
 export type Options = {
@@ -24,13 +24,13 @@ export const lineHeights: Record<LineHeight, number> = {
 }
 
 const fontFamilies: Record<FontFamily, string[]> = {
-  monaco: ['Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'monospace'],
+  monolisa: ['MonoLisa', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'monospace'],
   lucida: ['Lucida Console', 'Source Code Pro', 'monospace'],
 }
 
 const createThemeFromOptions = ({
   fontSize = 12,
-  fontFamily = 'monaco',
+  fontFamily = 'monolisa',
   lineHeight = 'normal',
 }: Options) => {
   // Theme styles that depend on settings

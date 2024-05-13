@@ -1054,8 +1054,8 @@ const defaultSettingsForAnonymousUser = userId => ({
   id: userId,
   ace: {
     mode: 'none',
-    theme: 'textmate',
-    fontSize: '12',
+    theme: 'dracula',
+    fontSize: '14',
     autoComplete: true,
     spellCheckLanguage: '',
     pdfViewer: '',
